@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+keys.py
+
+.idea/
+Include/
+Lib/
+Scripts/
+pip-selfcheck.json
+tcl/
