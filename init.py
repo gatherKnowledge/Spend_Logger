@@ -1,5 +1,6 @@
 import TelegramBot as t_bot
-import Product as product
+import model.Product
+
 # 입출력
 # 사용한 금액
 # 투자금
@@ -25,7 +26,7 @@ def buy_fund():
 		if yang.isdigit():
 			break
 	dec = input('기타 추가 설명을 입력해주세요.')
-	obj = product(jongmok, yongdo, yang, dec, price)
+	obj = Product(jongmok, yongdo, yang, dec, price)
 	obj.print_obj()
 	bot.send_msg(obj.make_str())
 
