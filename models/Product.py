@@ -1,4 +1,5 @@
 import datetime
+import json
 
 
 class Product:
@@ -23,6 +24,7 @@ class Product:
 		strn = self.make_str()
 		print(strn)
 
-	# json style string 출력
-	def make_jsonstring(self):
-		method_list = [func for func in dir(Product) if callable(getattr(Product, func))]
+	# json style object data
+	def getInstanceJson(self):
+		test = vars(self)
+		return json.dumps(test)
